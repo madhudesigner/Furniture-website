@@ -1,0 +1,406 @@
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family:'Inter',sans-serif;
+
+}
+
+body{
+
+    background-color:#fcfcfc;
+}
+
+
+/*navbar*/
+.navbar{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px 10%;
+ background-color: rgb(235, 255, 229);
+ box-shadow: 0 2px 10px rgba(0 0 0 0.5);
+ position: sticky;
+ top: 0px;
+
+    
+}
+.logo{
+  font-family:'playfair display',serif; 
+  font-size: 20px;
+  font-weight: bold;
+
+}
+ 
+.navbar .nav-links{
+list-style: none;
+display: flex;
+gap: 30px;
+
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+
+}
+
+
+.cta{
+    background-color:green;
+    color: rgb(255, 255, 255);
+border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease;
+
+
+}
+
+.cta:hover{
+  background-color: rgb(10, 164, 10);
+  color: rgb(255, 255, 255);
+}
+
+.banner{
+  background-color:  rgb(250, 255, 246);
+display: flex;
+justify-content:space-between;
+align-items: center;
+padding: 80px 10%;
+
+}
+.banner-content{
+
+    flex: 1;
+
+    max-width: 600px;
+}
+
+
+.banner h1{
+font-family: 'playfair display',serif;
+    font-size: 43px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.banner p{
+    font-size: 18px;
+    margin-top: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.hero-buttons{
+    margin-top: 20px;
+}
+
+.btn-primary{
+   background-color: #1fa23a;
+  color: white;
+  border: none;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 8px;
+}
+  
+.btn-outline{
+    background: transparent;
+  border: 2px solid #1fa23a;
+  color: #1fa23a;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.hero-img img{
+
+  width: 500px; 
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+
+
+/*section styling*/
+.New-arrivals{
+
+      padding: 60px 5%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+/*header (title+button) */
+.section-header{
+  text-align: center;
+    justify-content: space-between;
+align-items: center;
+margin: 30px;
+
+}
+
+.section-header h2{
+font-family:'playfair display',serif;
+    font-size: 36px;
+    color:#333;
+    font-weight: 600;
+}
+
+.section-header p{
+padding: 25px 10px;
+  color: #555;
+}
+
+
+/*collection-container*/
+.collection-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding-bottom: 50px;
+}
+
+/*individual-card*/
+.collection-card{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align:left;
+  transition: all 0.3s ease;
+  width: 255px;
+  padding: 10px;
+
+}
+
+.collection-card img{
+ 
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+ border-radius: 3px;
+ margin-bottom: 25px;
+ transition: transform 0.4s ease;
+
+}
+
+/*text*/
+.collection-card h3{
+font-family:'playfair display',serif;
+font-size: 20px;
+color: #000000;
+margin-bottom: 8px;
+}
+
+.collection-card p{
+    font-size: 15px;
+    color: #535353;
+    margin-bottom: 10px;
+}
+
+.collection-card hr {
+  border: none;              
+  border-top: 1px solid #ddd; 
+  margin: 15px 0;
+}
+
+.collection-card .price {
+  font-size: 18px;
+  font-weight: bold;
+  
+  color: #000000;
+}
+
+.design-for-life {
+
+  background-color:  rgb(230, 252, 219);
+  text-align: center;
+  padding: 80px 10%;
+
+}
+.life-header h2{
+
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.life-header p{
+
+  font-size: 16px;
+  color: #434343;
+  margin-bottom: 15px;
+}
+
+/*features section*/
+.life-features{
+   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: nowrap; 
+  margin-top: 40px;
+}
+.features{
+  background-color:transparent;
+   max-width: 240px;
+  border-radius: 12px;
+  padding: 20px 20px;
+  text-align: center;
+  max-width: 290px;
+  transition: transform 0.3s ease;
+}
+
+.features img{
+    width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.features h3 {
+  font-size: 18px;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.features p {
+  
+  font-size: 15px;
+  color:#555;
+  line-height: 1.6;
+}
+
+.testimonals {
+  display: flex;
+justify-content: center;
+  background-color: #f9f9f9;
+  padding: 70px 10%;
+  text-align: center;
+
+}
+
+
+.testimonal-header h2{
+font-family: 'Playfair Display', serif;
+font-size: 32px;
+color: #222;
+  margin-bottom: 10px;
+
+}
+
+.testimonal-card{
+  margin-top: 30px;
+  background-color: #ffffff;
+ border-radius: 14px;
+ box-shadow:  0 4px 12px rgba(0,0,0,0.08);
+ padding: 50px 25px;
+width: 850px;
+ text-align: center;
+
+}
+.testimonal-card h3{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.testimonal-card p {
+  font-size: 18px;
+color: #292929;
+padding: 10px;
+
+}
+
+.testimonal-card img{
+     width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.testimonal-card span{
+  color: #555;
+}
+
+
+.footer{
+  
+  background-color: #006414;
+  color: #ffffff;
+  padding: 60px 100px 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+gap: 40px;
+
+}
+
+.footer-brand h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-brand p{
+ color: #d7d7d7;
+  font-size: 14px;
+max-width: 250px;
+  margin-bottom: 20px;
+
+}
+
+.social-icons a{
+  margin-right: 12px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-column h4{
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-column ul{
+ list-style: none;
+ padding: 0;
+
+}
+.footer-column ul li{
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #e3e3e3;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid#62c23f;
+  text-align: center;
+margin-top: 40px;
+padding-top: 20px;
+color: #f0f0f0;
+font-size: 14px;
+
+}
